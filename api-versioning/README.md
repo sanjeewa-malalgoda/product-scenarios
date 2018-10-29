@@ -1,4 +1,4 @@
-## API versioning
+# API versioning
 ## Introduction
 API versioning is a key functionality that needs to be addressed when the users, who are using a specific API for a long time. When introducing the new version of API the old API should also be supported for a specific time period. The time period is offered to the users of the old API to modify the availability of the new API and to make the transition. When the given time period ends, the old API can be retired. This feature allows users to manage multiple versions of same API at a given time.
 

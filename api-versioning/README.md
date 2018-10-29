@@ -30,7 +30,7 @@ In order to test this scenario we will need to have API Manager 2.6.0 deployment
 * Once logged in user will need to create API(Mobile_Stock_API). Initial version of this API can be version 1.0.0.
 * After creating this API, API publisher need to log in to API publisher UI and publish newly created API.
 * Now once API subscriber logged in to API store(Developer console) that user should be able to see newly created API.
-* Now API publisher need to login to API publisher UI and create new version of existing API(Mobile_Stock_API Version 1.0.0). Newly created API version would be version 2.0.0.
+* Now API publisher need to login to API publisher UI and create new version of existing API(Mobile_Stock_API Version 1.0.0). Newly created API version would be version 2.0.0. When new version of API create user can mandate re subscription to new version. Also publisher have capability to make new version of API default version.
 * Now we have both version of API running at the same time and when subscriber login to API store he should be able to see both versions.
 * Lets assume now we need to enforce users to only use version 2.0.0 of API. At this point API publisher can move version 1.0.0 to deprecated state. With that existing users will be able to use API. But any new users will not be able to subscribe API.
 * After sometime we will need to completely retire version 1.0.0 of the API. So at this point publisher can move this API to retired state.
@@ -42,9 +42,12 @@ No additional configuration or data to be added to servers.
 API Manager 2.6.0 deployment required. No additional artifact or data to be added to servers.
 
 ### Testing and Acceptance Criteria
+Once user followed above mentioned steps he should be able to see 2 versions of APIs at the same time. Then after deprecating version 1.0.0 it should appear as deprecated API in publisher UI and in store users should not allowed to subscribe to same API. After moving version 1.0.0 to retired state it will not appear on API store and users will not be able to use that.
+When API publisher create new version, if he selected require resubscription then exisiting users will not be able to ues it without new subscription. And if published selected mark as default API then newly created API version will be default API(which means if someone invoke API without any version then they will routed to this API)
 
 Below are the screenshots that shows the OLD and New API’s with there lifecycle states.
 
+Old API version(1.0.0.) in deprecated mode while new API(version 2.0.0) in published mode.
 ![](images/image_0.png)
 
 Old API in DEPRECAAPITED state

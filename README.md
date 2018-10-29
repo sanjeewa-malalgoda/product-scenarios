@@ -1,7 +1,6 @@
-# API Development
+# 1. API Development
 
-Managing Public, Partner vs Private APIs
-
+1.1 Managing Public, Partner vs Private APIs
 - Enable the internal use of APIs
 - Help pick and choose subset of those to be used with partners
 - Enabling building API ecosystems with partners that can unlock partnerships that cross industries (book a hotel and a car when you book a flight)
@@ -9,15 +8,13 @@ Managing Public, Partner vs Private APIs
   - Enable partners to connect with ours
 - A further subset to be exposed as public APIs. Many of the same APIs used internally and with partners can be used as public APIs to drive additional business and help obtain new customers.
 
-Ownership, permission and collaborative API development
-
+1.2 Ownership, permission and collaborative API development
 - Each business units are responsible for their APIs and data. Some of them having sensitive data. They need to consider security and controllability while providing value to the other business units.
 - Able to restrict API (and its development) by business units
 - Eg. APIs developed by financial business unit should be able to restrict (view/edit) to other business units
 - Selected APIs should be able to share with different business units (edit and view)
 
-Developer Optimized APIs Development
-
+1.3 Developer Optimized APIs Development
 - Business APIs can be access different parties via different devices. Providing optimized and personalized experience is the key success of digital transformation.
 - Same API can be access by different clients.
 - Eg, mobile device, PC, TV etc.
@@ -25,8 +22,7 @@ Developer Optimized APIs Development
 - Optimization can be a composition of the multiple backend or stripdown.
 - Client based prioritization of the APIs
 
-# API security
-
+# 2.0 API security
 - Prevent misuse or abuse of information or of any application resources exposed by an API
 - Have the ability to distinguish between internal, partner and public use of APIs via security controls and audits
 - Ability to trace back which apps are using what APIs (hence data or resources) with which user credentials, permissions and roles
@@ -34,15 +30,14 @@ Developer Optimized APIs Development
   - Embed custom security algorithms globally or for selected services
 - Ability to enforce both authentication (are you a valid user) and authorization (are you permitted to perform this action) on APIs
 
-Protecting Businesses by Anomaly Detection
+2.1 Protecting Businesses by Anomaly Detection
 
 - Identifying anomalies, abnormalities and frauds are key responsibilities of a business organisation. Not knowing them leads to business complications.
 - Should be able to add different policies to identify anomalies
 - Eg. Hijacking access tokens, application malfunction etc
 - System should be able to detect and able to act on it
 
-# App Development with APIs
-
+# 3. App Development with APIs
 - Use cases for APIs used in Mobile App development, Web App development and other forms of App development
 - Ability to facilitate different app channels and be able to track and monitor them
 - Support for custom APIs that deal with specific apps that require additional security
@@ -52,14 +47,13 @@ Protecting Businesses by Anomaly Detection
 - Fast track App development via API SDKs
 - Support users to consume services, APIs using different platforms (i.e - ability to be consumed by various clients)
 
-# API Lifecycle Management
-
+# 4. API Lifecycle Management
 - Ability to run full lifecycle API Management from the inception stage of an API until retirement
 - Notification mechanisms for informing developers on API changes
 - App lifecycle management mechanisms in sync with API lifecycle management
 - Introduce and execute organization specific lifecycle states
 
-# [API Versioning](https://github.com/sanjeewa-malalgoda/product-scenarios/tree/master/api-versioning)
+# 5. [API Versioning](https://github.com/sanjeewa-malalgoda/product-scenarios/tree/master/api-versioning)
 - Ability to retire old APIs and introduce new versions of APIs to enhance its functionality
 - Ensure that API updates don&#39;t break when upgraded/versioned or moved between environments, geographies, data centers and the cloud
 - A/B testing with old vs new APIs
@@ -68,22 +62,20 @@ Protecting Businesses by Anomaly Detection
 
 Transferring contracts with app developers to newer versions.
 
-# API Governance
-
+# 6. API Governance
 - Control and track the broader operational character of how APIs get exposed
 - Manage and maintain policy characteristics such as metering, SLAs, availability and performance
 - Different partners and developers specific policy management
 - People &amp; persona driven governance models (who can do what when?)
 - Dependency analysis. Track which services fuel which APIs and which APIs fuel which Apps.
 
-# API Rate Limiting
-
+# 7. API Rate Limiting
 - For monetization purposes, to enforce limits on an Application based on its subscriptions
 - Enforce fair usage policy among an application&#39;s users
 - Allow privileged rate limits based on location, device type, user credentials, etc.
 - Enforce a peak limit on back-end services to prevent total outages.
 
-# API Monetization
+# 8. API Monetization
 
 - Defining, enabling and monitoring revenue for APIs
 - Defining monetization tiers and throttling traffic based on these tiers
@@ -94,16 +86,14 @@ Transferring contracts with app developers to newer versions.
 - For back-ends that are also monetized, create reports and compare against invoices from back-end vendors.
 - Offer free trial version and ask to pay if they wish to continue the service for a long time (something similar to WSO2 API cloud)
 
-# Manage the Value Chain for APIs
-
+# 9. Manage the Value Chain for APIs
 - Defining, measuring, monitoring &amp; observing value of your API to the developer who uses it (The value for the app developer)
 - Defining, measuring, monitoring &amp; observing the value that developers provide to the end user of the App that they create (Value to the end users of the app that the developer create)
 - Value driven API management – maximize value, keep or kill decisions (Maximize the value chain for each participant in the API usage)
 - Combining APIs and facilitating composition to value add in novel ways around APIs
 - Identifying potential problems in the API, data to help make decisions to scale, prevent downtime, retrospect on failures, etc.
 
-Business Insights by API analytics
-
+9.1 Business Insights by API analytics
 - Business need to understand how they are performing. What are the new business opportunity etc.  API solution should be helped the by giving clear insights.
 - System should be able to provide use full analytics of API usage
 - These analytics should be help to business personal to analyse current business and able to get an insight of how to improve the business growth
@@ -111,8 +101,7 @@ Business Insights by API analytics
 - eg.  Which APIs (business units) need to improve or retired
 - Eg. which region giving more business, do we need more campaign etc
 
-# Developer Enablement and Community Building
-
+# 10. Developer Enablement and Community Building
 - Bring developers on board
 - Manage developers and assist them in making the most of the exposed APIs
 - Community building around APIs provided
@@ -122,10 +111,7 @@ Business Insights by API analytics
 - Integrate with social media accounts (login with well known SM sites like FB, G+) / Single sign on with google/facebook/twitter accounts
 - API mar
 
-
-
-# Support for API Types
-
+# 11. Support for API Types
 - Data APIs – Providing access to data assets
   - Concerns with data security, availability and role based access controls to be addressed
 - Resource APIs – Providing access to REST and Micro Services style APIs
@@ -133,8 +119,7 @@ Business Insights by API analytics
 - Cloud APIs – those that are external to the organization access via Internet
 - Streaming APIs and Push Notifications for reducing server load and to minimize client to server connection overhead.
 
-# Geographical Distributed wide API Management
-
+# 12. Geographical Distributed wide API Management
 - Multi geographical based business need to maintain quality of services across multi regions.
 - Application can be access from multi geographical locations
 - Optimizing backend routing based on the geographic
@@ -142,18 +127,14 @@ Business Insights by API analytics
 - Geographical wide analysis
 - Geographical based rate limiting
 
-# API SLA
-
+# 13. API SLA
 - Mission critical API providers should be maintained high level of SLAs to their consumers. Need to mitigate risk to maximum level.
 - Able to deploy solution in multi datacenter
 - Increase the availability of the solution (getting more 9&#39;s)
 - Backup and recovery plan
 - Monitoring and traffic partitioning
 
-
-
-# Micro API Gateway
-
+# 14. Micro API Gateway
 - MSA give lots of benefits to agile business. API management will be key component of the MSA.
 - With the boots of the MSA need to have effective way to handle APIs which are exposing by microservices
 - Able to protect/rate limits/analyze inter microservice API usage
@@ -161,10 +142,7 @@ Business Insights by API analytics
 - Separate out inner architecture and outer architecture
 - How easy to deploy in containers?
 
-
-
-# Hybrid Cloud Pattern Support
-
+# 15. Hybrid Cloud Pattern Support
 - Protecting business APIs and data will be a key requirement of business organizations. Ability to keep private APIs on promise will be more comfortable to the organizations.
 - Should be able to handle API development and management over cloud solution
 - Runtime traffic of the APIs should not go outside of the on-promise.

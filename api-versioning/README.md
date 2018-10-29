@@ -9,7 +9,7 @@ Lets take a scenario where user runs multiple version of same APIs in same runti
 * A/B testing with old vs new APIs
 * Ability to notify consumers of the old version(version 1.0.0) about the availability of the new API version(whenever version 1.1.0 available to use)
 * Enforcing a grace period to upgrade to the new version of the API
-*Transferring contracts with app developers to newer versions.
+* Transferring contracts with app developers to newer versions.
 
 ## Persona
 When it comes to API versining there can be muliple users associated with that story. If we take this particular example API publisher will perform all API creating, versioning, create new version, manage lifecycles of existing APIs. Then API subscriber will be able see those actions perform by API publisher. For an example if publisher created new version (1.1.0) of exsting API version (1.0.0) then subscriber will see this new version and should be able to test it and subscribe. And with subscriber notification feature API publisher can notify all users of existing version 1.0.0.
@@ -22,20 +22,27 @@ ABC company is a mobile phone manufacturing company. They have a requirement to 
 * Subscribers of the Old API needs to get notified when the new API version is PUBLISHED.
 
 ### Prerequisites
-In order to run this sample we will need to have API Manager 2.6.0 deployment. This deployment can be all in one node deployment or it can be a distributed API Manager deployment. Since provided sample is shell script user who test this flow should be able to execute shell script.
+In order to test this scenario we will need to have API Manager 2.6.0 deployment. This deployment can be all in one node deployment or it can be a distributed API Manager deployment. Since provided sample is shell script user who test this flow should be able to execute shell script.
 
 ### Development 
-For this particular sample there is no specific development to be done as provided sample script will perform all actions required for this usecase.
+* Start the wso2am-2.6.0 distribution by executing [APIM_HOME]/bin/wso2server.sh or [APIM_HOME]/bin/wso2server.bat
+* Then user will need to login to API publisher as API creator.
+* Once logged in user will need to create API(Mobile_Stock_API). Initial version of this API can be version 1.0.0.
+* After creating this API, API publisher need to log in to API publisher UI and publish newly created API.
+* Now once API subscriber logged in to API store(Developer console) that user should be able to see newly created API.
+* Now API publisher need to login to API publisher UI and create new version of existing API(Mobile_Stock_API Version 1.0.0). Newly created API version would be version 2.0.0.
+* Now we have both version of API running at the same time and when subscriber login to API store he should be able to see both versions.
+* Lets assume now we need to enforce users to only use version 2.0.0 of API. At this point API publisher can move version 1.0.0 to deprecated state. With that existing users will be able to use API. But any new users will not be able to subscribe API.
+* After sometime we will need to completely retire version 1.0.0 of the API. So at this point publisher can move this API to retired state.
 
-### Sample configuration
+### Sample Configuration
 No additional configuration or data to be added to servers.
 
 ### Deployment
 API Manager 2.6.0 deployment required. No additional artifact or data to be added to servers.
 
-### Testing and acceptance criteria
-* Start the wso2am-2.6.0 distribution by executing [APIM_HOME]/bin/wso2server.sh or [APIM_HOME]/bin/wso2server.bat
-* Run the file run.sh in sample scenarios root directory[APIM_HOME/sample-scenarios] as ./run.sh
+### Testing and Acceptance Criteria
+
 Below are the screenshots that shows the OLD and New API’s with there lifecycle states.
 
 ![](images/image_0.png)

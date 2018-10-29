@@ -50,7 +50,7 @@ Below are the screenshots that shows the OLD and New API’s with there lifecycl
 Old API version(1.0.0.) in deprecated mode while new API(version 2.0.0) in published mode.
 ![](images/image_0.png)
 
-Old API in DEPRECAAPITED state
+Old API in DEPRICATED state
 
 ![](images/image_1.png)
 

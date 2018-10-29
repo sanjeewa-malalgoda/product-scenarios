@@ -55,14 +55,11 @@ Protecting Businesses by Anomaly Detection
 # API Lifecycle Management
 
 - Ability to run full lifecycle API Management from the inception stage of an API until retirement
--
 - Notification mechanisms for informing developers on API changes
 - App lifecycle management mechanisms in sync with API lifecycle management
--
 - Introduce and execute organization specific lifecycle states
 
-# API Versioning
-
+# [API Versioning](https://github.com/sanjeewa-malalgoda/product-scenarios/tree/master/api-versioning)
 - Ability to retire old APIs and introduce new versions of APIs to enhance its functionality
 - Ensure that API updates don&#39;t break when upgraded/versioned or moved between environments, geographies, data centers and the cloud
 - A/B testing with old vs new APIs

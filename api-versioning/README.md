@@ -12,7 +12,7 @@ Lets take a scenario where user runs multiple version of same APIs in same runti
 *Transferring contracts with app developers to newer versions.
 
 ## Persona
-When it comes to API versining there can be muliple users associated with that story. 
+When it comes to API versining there can be muliple users associated with that story. If we take this particular example API publisher will perform all API creating, versioning, create new version, manage lifecycles of existing APIs. Then API subscriber will be able see those actions perform by API publisher. For an example if publisher created new version (1.1.0) of exsting API version (1.0.0) then subscriber will see this new version and should be able to test it and subscribe. And with subscriber notification feature API publisher can notify all users of existing version 1.0.0.
 
 ## Implementation
 ABC company is a mobile phone manufacturing company. They have a requirement to publish mobile phone prices through an API. When the industry grows with the prices, they need to publish some additional data such as a rating, user reviews of the mobile phones, etc. Users of the old API should know that there is a new API version released, and they need to be notified.
@@ -27,7 +27,7 @@ In order to run this sample we will need to have API Manager 2.6.0 deployment. T
 ### Development 
 For this particular sample there is no specific development to be done as provided sample script will perform all actions required for this usecase.
 
-#### Sample configuration
+### Sample configuration
 No additional configuration or data to be added to servers.
 
 ### Deployment
@@ -40,7 +40,7 @@ Below are the screenshots that shows the OLD and New API’s with there lifecycl
 
 ![](images/image_0.png)
 
-Old API in DEPRECATED state
+Old API in DEPRECAAPITED state
 
 ![](images/image_1.png)
 
@@ -48,7 +48,7 @@ Old API in PUBLISHED state
 
 ![](images/image_2.png)
 
-## See also
+## See Also
 [1] - https://docs.wso2.com/display/AM250/Enabling+Notifications
 
 

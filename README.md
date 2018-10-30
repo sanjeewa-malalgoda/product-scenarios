@@ -3,7 +3,7 @@
 1.1 Managing Public, Partner vs Private APIs
 - Enable the internal use of APIs
 - Help pick and choose subset of those to be used with partners
-- Enabling building API ecosystems with partners that can unlock partnerships that cross industries (book a hotel and a car when you book a flight)
+- Enabling building API ecosystems with partners that can unlock partnerships that cross industries.
   - Connect with APIs from partners
   - Enable partners to connect with ours
 - A further subset to be exposed as public APIs. Many of the same APIs used internally and with partners can be used as public APIs to drive additional business and help obtain new customers.
@@ -135,12 +135,12 @@ Transferring contracts with app developers to newer versions.
 - Monitoring and traffic partitioning
 
 # 14. Micro API Gateway
-- MSA give lots of benefits to agile business. API management will be key component of the MSA.
-- With the boots of the MSA need to have effective way to handle APIs which are exposing by microservices
-- Able to protect/rate limits/analyze inter microservice API usage
-- Simple compositions/integrations in API layer
-- Separate out inner architecture and outer architecture
-- How easy to deploy in containers?
+## 14.1 Deploy API Microgateway and use microgateway toolkit.
+## 14.2 Create Microgateway and Deploy - VM mode(Selected API or Labled group of API).
+## 14.3 Deploy Microgateway in Docker Envirionment.
+## 14.4 Invoke APIs Deployed in API Microgateway with OAuth 2.0 Security.
+## 14.5 Invoke APIs Deployed in API Microgateway with JWT Security Token.
+## 14.5 
 
 # 15. Hybrid Cloud Pattern Support
 - Protecting business APIs and data will be a key requirement of business organizations. Ability to keep private APIs on promise will be more comfortable to the organizations.

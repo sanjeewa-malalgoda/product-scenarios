@@ -59,23 +59,26 @@ Old API in PUBLISHED state
 ![](images/image_2.png)
 
 ## API Reference
-Create a new API version
-This operation can be used to create a new version of an existing API. The new version is specified as newVersion query parameter. New API will be in CREATED state.
-```curl 
+Users can create a new API version of API via publisher user interface or REST API. Following is the base URL of API copy resource. Users can invoke this API and create copy of existing API with different version.
+
+``` 
 POST https://apis.wso2.com/api/am/publisher/v0.14/apis/copy-api
 ```
 
 OAuth 2.0 Scope
-```sh 
+``` 
 apim:api_create
 ```
 
 Sample Request 
-```curl
+The new version is specified as newVersion query parameter. New API will be in CREATED state and API publisher need to publish it manually or via API call.
+```
 POST https://localhost:9443/api/am/publisher/v0.14/apis/copy-api?apiId=890a4f4d-09eb-4877-a323-57f6ce2ed79b&newVersion=2.0.0 Authorization: Bearer ae4eae22-3f65-387b-a171-d37eaa366fa8'
 ```
 
 ## See Also
-[1] - https://docs.wso2.com/display/AM250/Enabling+Notifications
+As discussed above when new API version got created we might need to send notifications to subscribers or another external party. In that case users can effectively use API notification feature. Please view documentation[1] for API notification feature.
+
+[1] - https://docs.wso2.com/display/AM260/Enabling+Notifications
 
 

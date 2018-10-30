@@ -135,12 +135,12 @@ Transferring contracts with app developers to newer versions.
 - Monitoring and traffic partitioning
 
 # 14. Micro API Gateway
-## 14.1 Deploy API Microgateway and use microgateway toolkit.
-## 14.2 Create Microgateway and Deploy - VM mode(Selected API or Labled group of API).
-## 14.3 Deploy Microgateway in Docker Envirionment.
-## 14.4 Invoke APIs Deployed in API Microgateway with OAuth 2.0 Security.
-## 14.5 Invoke APIs Deployed in API Microgateway with JWT Security Token.
-## 14.5 
+### 14.1 Deploy API Microgateway and use microgateway toolkit.
+### 14.2 Create Microgateway and Deploy - VM mode(Selected API or Labled group of API).
+### 14.3 Deploy Microgateway in Docker Envirionment.
+### 14.4 Invoke APIs Deployed in API Microgateway with OAuth 2.0 Security.
+### 14.5 Invoke APIs Deployed in API Microgateway with JWT Security Token.
+### 14.5 API Microgateway Throttling
 
 # 15. Hybrid Cloud Pattern Support
 - Protecting business APIs and data will be a key requirement of business organizations. Ability to keep private APIs on promise will be more comfortable to the organizations.
